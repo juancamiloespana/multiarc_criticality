@@ -1,0 +1,144 @@
+[-/-/-/-  & -/Plant/CD/Customer] (Agua_Clara_Casa-Villavicencio) {134,0.22}
+[-/-/-/-  & -/-/CD/Customer] (Agua_Clara_Cesar-Ocana) {83,0.16}
+[-/-/-/-  & -/-/-/- ] (Agua_Clara_Cesar-San_Alberto) {60,0.22}
+[-/-/-/-  & -/-/-/- ] (Aguazul-Agua_Clara_Casa) {100,0.38}
+[-/-/-/-  & -/-/-/- ] (Agustin_C-Cuatrovientos) {67,0.11}
+[-/-/-/-  & -/-/-/- ] (Agustin_C-San_Roque) {98,0.11}
+[-/-/-/-  & -/-/CD/Customer] (Altamira-Florencia) {53,0.27}
+[-/-/-/-  & -/-/-/Customer] (Altamira-Mocoa) {177,0.27}
+[-/-/CD/Customer & -/-/-/- ] (Armenia-La_Paila) {57,0.27}
+[-/-/-/-  & Supplier/Plant/CD/Customer] (Barbosa_Ant-Medellin) {43,0.16}
+[-/-/-/-  & -/-/-/- ] (Barbosa_Ant-Puerto_Araujo) {179,0.33}
+[-/-/CD/-  & -/-/-/- ] (Barbosa_Boy-Puerto_Araujo) {133,0.38}
+[-/Plant/CD/Customer & -/-/-/- ] (Barrancabermeja-La_Fortuna) {80,0.16}
+[-/Plant/CD/Customer & -/Plant/CD/- ] (Barranquilla-Barranquilla1) {0,0}
+[-/Plant/CD/Customer & -/-/-/- ] (Barranquilla-Carreto) {106,0.11}
+[-/Plant/CD/Customer & -/Plant/CD/Customer] (Barranquilla-Cartagena) {110,0.11}
+[-/-/-/-  & -/Plant/CD/Customer] (Belen_Boy-Duitama) {33,0.22}
+[-/-/-/-  & -/-/-/- ] (Belen_Boy-Hato_Corozal) {170,0.33}
+[Supplier/Plant/CD/Customer & Supplier/Plant/CD/- ] (Bogota-Bogota1) {0,0}
+[Supplier/Plant/CD/Customer & -/Plant/CD/- ] (Bogota-Bogota2) {0,0}
+[Supplier/Plant/CD/Customer & -/-/CD/Customer] (Bogota-Fusa) {69,0.22}
+[Supplier/Plant/CD/Customer & Supplier/-/CD/Customer] (Bogota-Madrid) {34,0.16}
+[Supplier/Plant/CD/Customer & -/Plant/CD/Customer] (Bogota-Villavicencio) {88,0.38}
+[-/-/-/-  & -/-/-/Customer] (Bolombolo-Quibdo) {120,0.44}
+[-/-/CD/Customer & -/-/-/- ] (Bosconia-Cuatrovientos) {33,0.11}
+[-/-/CD/Customer & -/-/-/- ] (Bosconia-La_Gloria) {63,0.11}
+[-/Plant/CD/Customer & -/-/-/- ] (Bucaramanga-La_Fortuna) {42,0.33}
+[-/Plant/CD/Customer & -/-/-/- ] (Bucaramanga-Malaga) {204,0.27}
+[-/Plant/CD/Customer & -/-/-/Customer] (Bucaramanga-San_Gil) {98,0.22}
+[-/-/-/-  & -/-/-/Customer] (Buenavista-Riohacha) {85,0.11}
+[-/-/-/-  & -/-/-/- ] (Buenavista-S_Juan_Cesar) {20,0.11}
+[-/-/CD/Customer & Supplier/Plant/CD/Customer] (Buga-Cali) {73,0.27}
+[-/-/CD/Customer & -/-/-/- ] (Buga-Loboguerrero) {56,0.27}
+[-/-/CD/Customer & -/-/-/Customer] (Buga-Palmira) {64,0.11}
+[Supplier/Plant/CD/Customer & -/-/CD/Customer] (Cali-Jamundi) {19,0.33}
+[Supplier/Plant/-/Customer & -/-/CD/Customer] (Caloto-Popayan) {104,0.27}
+[-/-/-/-  & -/-/-/- ] (Carmen_de_Bolivar-Puerta_Hierro) {123,0.11}
+[-/-/-/-  & -/-/-/- ] (Carreto-Carmen_de_Bolivar) {138,0.11}
+[-/Plant/CD/Customer & -/-/-/- ] (Cartagena-Carreto) {78,0.11}
+[-/Plant/CD/Customer & -/-/-/Customer] (Cartagena-Lorica) {215,0.11}
+[-/-/-/Customer & -/-/CD/Customer] (Cartago-Armenia) {56,0.27}
+[-/-/-/Customer & -/-/CD/Customer] (Cartago-Buga) {109,0.11}
+[-/-/-/Customer & -/-/CD/Customer] (Cartago-Zarzal) {42,0.16}
+[-/-/CD/Customer & -/-/-/- ] (Caucasia-Barbosa_Ant) {267,0.22}
+[-/-/CD/Customer & -/-/CD/Customer] (Chiquinquira-Zipaquira) {95,0.16}
+[-/-/-/-  & -/-/-/- ] (Cuatrovientos-El_Banco) {108,0.11}
+[-/-/-/-  & -/-/-/- ] (Cuatrovientos-San_Roque) {58,0.11}
+[-/Plant/CD/Customer & -/-/-/Customer] (Cucuta-Pamplona) {81,0.27}
+[-/Plant/CD/Customer & -/-/-/- ] (Duitama-Aguazul) {143,0.44}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Duitama-Tunja) {56,0.11}
+[-/-/-/-  & -/-/-/- ] (El_Banco-El_Burro) {41,0.11}
+[-/-/-/-  & -/-/-/- ] (El_Burro-Agua_Clara_Cesar) {32,0.16}
+[-/-/-/-  & -/Plant/CD/Customer] (Espinal-Neiva) {145,0.16}
+[-/-/CD/Customer & -/-/CD/Customer] (Fusa-Ricaurte) {66,0.27}
+[-/-/-/Customer & -/-/-/- ] (Girardot-Espinal) {21,0.22}
+[-/-/-/-  & -/-/CD/Customer] (Hato_Corozal-Yopal) {131,0.33}
+[-/-/-/-  & -/-/-/- ] (Honda-Mariquita) {35,0.22}
+[-/-/-/-  & -/-/CD/Customer] (Honda-Villeta) {67,0.11}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Ibague-Armenia) {80,0.33}
+[-/Plant/CD/Customer & -/-/-/- ] (Ibague-Espinal) {59,0.22}
+[-/Plant/CD/Customer & -/-/CD/- ] (Ibague-Ibague1) {0,0}
+[-/-/CD/Customer & -/-/-/- ] (Itagui-La_Felisa) {101,0.33}
+[-/-/CD/Customer & Supplier/Plant/-/Customer] (Jamundi-Caloto) {46,0.27}
+[-/-/CD/Customer & -/-/-/- ] (La_Dorada-Honda) {37,0.16}
+[-/-/-/-  & -/-/-/Customer] (La_Felisa-Cartago) {124,0.33}
+[-/-/-/-  & -/-/-/- ] (La_Fortuna-Puerto_Araujo) {105,0.27}
+[-/-/-/-  & -/-/-/- ] (La_Gloria-Carmen_de_Bolivar) {104,0.11}
+[-/-/-/-  & -/-/-/- ] (La_Gloria-Sta_Ana) {88,0.11}
+[-/-/-/-  & -/Plant/-/Customer] (La_Paila-Tulua) {227,0.22}
+[-/-/-/-  & -/-/-/- ] (La_Paz-Agustin_C) {46,0.11}
+[-/-/-/-  & -/-/CD/Customer] (Loboguerrero-Buenaventura) {66,0.38}
+[-/-/-/-  & Supplier/Plant/CD/Customer] (Loboguerrero-Cali) {52,0.33}
+[-/-/-/Customer & -/Plant/CD/Customer] (Lorica-Monteria) {61,0.11}
+[Supplier/-/CD/Customer & -/-/-/Customer] (Madrid-Girardot) {142,0.27}
+[-/-/CD/Customer & -/-/-/- ] (Maicao-Buenavista) {116,0.11}
+[-/-/-/-  & -/-/-/- ] (Malaga-Soata) {72,0.16}
+[-/-/CD/Customer & -/-/-/- ] (Manizales-La_Felisa) {70,0.27}
+[-/-/CD/Customer & -/Plant/CD/Customer] (Manizales-Pereira) {45,0.33}
+[-/-/-/-  & -/Plant/CD/Customer] (Mariquita-Ibague) {129,0.16}
+[-/-/-/-  & -/-/CD/Customer] (Mariquita-Manizales) {125,0.33}
+[Supplier/Plant/CD/Customer & -/-/-/- ] (Medellin-Bolombolo) {69,0.33}
+[Supplier/Plant/CD/Customer & -/-/CD/Customer] (Medellin-Itagui) {23,0}
+[Supplier/Plant/CD/Customer & -/Plant/CD/- ] (Medellin-Medellin1) {0,0}
+[Supplier/Plant/CD/Customer & -/-/CD/Customer] (Medellin-Rionegro) {44,0.22}
+[Supplier/Plant/CD/Customer & -/-/-/- ] (Medellin-Sonson) {104,0.22}
+[Supplier/Plant/CD/Customer & -/-/CD/Customer] (Medellin-Sta_Fe_A) {61,0.33}
+[-/-/-/Customer & -/Plant/CD/Customer] (Mocoa-Pasto) {103,0.27}
+[-/Plant/CD/Customer & -/-/-/Customer] (Monteria-Planeta_Rica) {53,0.11}
+[-/Plant/CD/Customer & -/-/-/- ] (Monteria-Ye) {62,0.11}
+[-/-/-/-  & -/-/CD/Customer] (Narino-La_Dorada) {102,0.27}
+[-/Plant/CD/Customer & -/-/-/- ] (Neiva-Altamira) {151,0.11}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Neiva-Florencia) {226,0.27}
+[-/-/CD/Customer & -/Plant/CD/Customer] (Ocana-Cucuta) {197,0.16}
+[-/-/-/Customer & Supplier/Plant/CD/Customer] (Palmira-Cali) {79,0.11}
+[-/-/-/Customer & Supplier/Plant/-/Customer] (Palmira-Caloto) {100,0.22}
+[-/-/-/Customer & -/Plant/CD/Customer] (Pamplona-Bucaramanga) {125,0.16}
+[-/-/-/Customer & -/-/-/- ] (Pamplona-Malaga) {117,0.27}
+[-/-/-/Customer & -/-/-/Customer] (Pamplona-Tame) {211,0.33}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Pereira-Armenia) {35,0.27}
+[-/Plant/CD/Customer & -/-/-/Customer] (Pereira-Cartago) {36,0.27}
+[-/Plant/CD/Customer & -/Plant/CD/- ] (Pereira-Pereira1) {0,0}
+[-/-/CD/Customer & -/-/CD/- ] (Pinchote-Barbosa_Boy) {109,0.38}
+[-/-/-/Customer & -/-/CD/Customer] (Planeta_Rica-Caucasia) {69,0.11}
+[-/-/CD/Customer & -/Plant/CD/Customer] (Popayan-Neiva) {266,0.22}
+[-/-/CD/Customer & -/Plant/CD/Customer] (Popayan-Pasto) {247,0.27}
+[-/-/-/-  & -/-/CD/Customer] (Puerta_Hierro-Sincelejo) {43,0.11}
+[-/-/-/-  & -/-/-/- ] (Puerta_Hierro-Sta_Ana) {123,0.11}
+[-/-/-/-  & -/-/-/- ] (Puerto_Araujo-Puerto_Boyaca) {126,0.27}
+[-/-/-/-  & -/-/CD/Customer] (Puerto_Boyaca-La_Dorada) {87,0.16}
+[-/-/CD/Customer & -/-/-/Customer] (Ricaurte-Girardot) {7,0.27}
+[-/-/-/Customer & -/Plant/CD/Customer] (Riohacha-Santa_Marta) {160,0.11}
+[-/-/CD/Customer & -/-/-/- ] (Rionegro-Puerto_Boyaca) {215,0.27}
+[-/-/-/-  & -/-/-/- ] (S_Juan_Cesar-La_Paz) {61,0.11}
+[-/-/-/-  & -/Plant/CD/Customer] (S_Juan_Cesar-Valledupar) {79,0.11}
+[-/-/-/-  & -/Plant/CD/Customer] (San_Alberto-Bucaramanga) {107,0.16}
+[-/-/-/-  & -/-/-/- ] (San_Alberto-La_Fortuna) {91,0.27}
+[-/-/-/Customer & -/-/CD/Customer] (San_Gil-Pinchote) {7,0.38}
+[-/-/-/Customer & -/-/-/- ] (San_Gil-Soata) {141,0.27}
+[-/-/-/-  & -/-/-/- ] (San_Roque-El_Burro) {59,0.11}
+[-/Plant/CD/Customer & -/Plant/CD/Customer] (Santa_Marta-Barranquilla) {84,0.11}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Santa_Marta-Bosconia) {160,0.16}
+[-/-/CD/Customer & -/-/-/Customer] (Sincelejo-Lorica) {19,0.11}
+[-/-/CD/Customer & -/-/-/- ] (Sincelejo-Ye) {74,0.11}
+[-/-/-/-  & -/-/-/- ] (Soata-Belen_Boy) {81,0.22}
+[-/-/-/-  & -/-/-/- ] (Sonson-Narino) {30,0.27}
+[-/-/-/-  & -/-/-/- ] (Sta_Ana-El_Banco) {61,0.11}
+[-/-/CD/Customer & -/-/-/- ] (Sta_Fe_A-Bolombolo) {108,0.33}
+[-/-/CD/Customer & -/Plant/CD/Customer] (Sta_Fe_A-Turbo) {280,0.38}
+[-/-/-/Customer & -/-/-/Customer] (Tame-Arauca) {420,0.27}
+[-/-/-/Customer & -/-/-/- ] (Tame-Hato_Corozal) {90,0.27}
+[-/Plant/-/Customer & -/-/CD/Customer] (Tulua-Buga) {27,0.22}
+[-/-/CD/Customer & -/-/-/- ] (Tunja-Agua_Clara_Casa) {207,0.38}
+[-/-/CD/Customer & -/-/CD/- ] (Tunja-Barbosa_Boy) {72,0.33}
+[-/-/CD/Customer & Supplier/Plant/CD/Customer] (Tunja-Bogota) {122,0.11}
+[-/-/CD/Customer & -/-/CD/Customer] (Tunja-Chiquinquira) {76,0.11}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Valledupar-Bosconia) {95,0.11}
+[-/Plant/CD/Customer & -/-/-/- ] (Valledupar-La_Paz) {19,0.11}
+[-/Plant/CD/Customer & -/-/CD/Customer] (Villavicencio-Granada) {83,0.27}
+[-/-/CD/Customer & Supplier/Plant/CD/Customer] (Villeta-Bogota) {101,0.27}
+[-/-/CD/Customer & Supplier/-/CD/Customer] (Villeta-Madrid) {65,0.27}
+[-/-/-/-  & -/-/-/Customer] (Ye-Planeta_Rica) {44,0.11}
+[-/-/CD/Customer & -/-/-/- ] (Yopal-Aguazul) {28,0.33}
+[-/-/CD/Customer & -/-/-/- ] (Zarzal-La_Paila) {10,0.16}
+[-/-/CD/Customer & Supplier/Plant/CD/Customer] (Zipaquira-Bogota) {53,0.16}
