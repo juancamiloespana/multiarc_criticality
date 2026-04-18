@@ -25,4 +25,4 @@ data/
 └── db/         # SQLite database(s)
 ```
 
-Results are stored in `resultados/`.
+Results are stored in `output/`.

@@ -2,15 +2,19 @@
       
       
       
+from pathlib import Path
 import pandas as pd
 import sqlite3 as sql
 import openpyxl
 from os import listdir
 from tqdm import tqdm  ### para crear contador en un for para ver evolución
 
+BASE = Path(__file__).parent
 
 
-def arc_clas(con,url_arc='data/raw/arcsData.txt'):
+
+def arc_clas(con,url_arc=None):
+    if url_arc is None: url_arc = BASE / 'data/raw/arcsData.txt'
     ####Leer info de arcos
     df_arc_ff=pd.read_table(url_arc, header=None,sep=" ")
     df_arc_ff.columns=['origen','destino','demanda','prob_fallo']
@@ -22,7 +26,9 @@ def arc_clas(con,url_arc='data/raw/arcsData.txt'):
     
     return(df_arc_ff)
 
-def set_node_df(con, url_nodes='data/raw/nodesData.txt',url_nodeclas='data/raw/clasificacionArcos.txt'):  
+def set_node_df(con, url_nodes=None, url_nodeclas=None):
+    if url_nodes is None: url_nodes = BASE / 'data/raw/nodesData.txt'
+    if url_nodeclas is None: url_nodeclas = BASE / 'data/raw/clasificacionArcos.txt'  
     
     #### leer nombre nodos
 
@@ -167,13 +173,12 @@ def main():
     
     ## archivos genéricos de la red
 
-    url_arc='data/raw/arcsData.txt'
-    url_nodes='data/raw/nodesData.txt'
-    url_nodeclas='data/raw/clasificacionArcos.txt'
+    url_arc = BASE / 'data/raw/arcsData.txt'
+    url_nodes = BASE / 'data/raw/nodesData.txt'
+    url_nodeclas = BASE / 'data/raw/clasificacionArcos.txt'
 
-
-    path_fail='data/raw'
-    path_kpi='data/raw'
+    path_fail = BASE / 'data/raw'
+    path_kpi = BASE / 'data/raw'
 
 
     files_in_kpi = sorted(listdir(path_kpi))
@@ -184,7 +189,7 @@ def main():
         
         print(f"Procesando escenario: {kpi}")
         arc_reinforced = kpi[4:-4]
-        db='data/db/db_'+arc_reinforced.replace('-','_')
+        db = BASE / ('data/db/db_' + arc_reinforced.replace('-','_'))
         url_kpi=path_kpi + '/' + kpi                    
         url_arcsce=path_fail + '/' + 'fallos_' + arc_reinforced + '.txt'
        
@@ -221,7 +226,7 @@ main()
 ### convertir esto a función para que se pueda aplicar para cada escenario
 ###############  agregar coordenadas y enumerar ########################
 
-db="data/db/db_EstFija10"
+db = BASE / 'data/db/db_EstFija10'
 con=sql.connect(db)
 cur= sql.Cursor(con)
 
@@ -229,7 +234,7 @@ cur.execute("select name from sqlite_master where type='table'")
 cur.fetchall()
 
 
-coord=pd.read_csv('data/processed/Coordenadas.csv')
+coord=pd.read_csv(BASE / 'data/processed/Coordenadas.csv')
 coord.to_sql('coordenadas', con, if_exists="replace")
 pd.read_sql('select*, i as dos from info_nodes', con)
 ####### información de nods y arcos es igual para todos los escenarios
@@ -309,10 +314,10 @@ info_arc=pd.read_sql(""" with t1 as(
 
 info_arc=info_arc.drop_duplicates(subset='arc_i_j',keep='first')
 info_arc.sort_values('arc_i_j')
-info_arc.to_csv('data/processed/info_arc.csv')
+info_arc.to_csv(BASE / 'data/processed/info_arc.csv')
 
 
-info_nodes2.to_csv('data/processed/info_nodes.csv')
+info_nodes2.to_csv(BASE / 'data/processed/info_nodes.csv')
 info_arc.to_sql('info_arc', con, if_exists='replace')
 
 ####
@@ -322,7 +327,7 @@ index_node=info_nodes2[['name_node','i']]
 index_node.columns=['Node name','index']
 
 index_node=index_node.replace('_', ' ', regex=True)
-index_node.to_csv('data/processed/node_index_long.csv', index=False)
+index_node.to_csv(BASE / 'data/processed/node_index_long.csv', index=False)
 
 
 
@@ -340,4 +345,4 @@ for i in range(num_parts):
 # Combine into a single DataFrame with new columns
 final_table = pd.concat(reshaped_data, axis=1, keys=[f'Part{i+1}' for i in range(num_parts)])
 
-final_table.to_csv('data/processed/node_index.csv', index=False)
+final_table.to_csv(BASE / 'data/processed/node_index.csv', index=False)

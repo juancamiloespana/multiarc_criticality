@@ -5,10 +5,13 @@
 ##################################################################
 
 ### paquetes con operaciones básicas y sql 
+from pathlib import Path
 import pandas as pd
 import sqlite3 as sql ##para conectarse a bd, traer y manipular info con sql
 import numpy as np
 import math ### para floor y ceil
+
+BASE = Path(__file__).parent
 
 #### para hacer gráficas
 
@@ -58,7 +61,7 @@ os.getcwd()
 #     curs.append(cur)
 
 
-cons=sql.connect('data/db/db_EstFija10')
+cons=sql.connect(BASE / 'data/db/db_EstFija10')
 curs=cons.cursor()
 
 curs.execute("select name from sqlite_master where type='table'")
@@ -602,4 +605,4 @@ for i, arco in enumerate(arcos):
     df_tot=pd.concat([df_tot, df_arco], axis=0)
 
 df_tot=df_tot.sort_values(by='impact', ascending=False)
-df_tot.to_excel('resultados/subsets_escenarios1/indivEstFija10.xlsx', index=False)
+df_tot.to_excel(BASE / 'output/subsets_escenarios1/indivEstFija10.xlsx', index=False)

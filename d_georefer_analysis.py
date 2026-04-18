@@ -1,4 +1,7 @@
+from pathlib import Path
 from geopy.geocoders import Nominatim
+
+BASE = Path(__file__).parent
 
 
 ### paquetes con operaciones básicas y sql 
@@ -30,7 +33,7 @@ import folium as fo
 
 
 
-bds=["data/db/db_EstFija10"]
+bds=[BASE / "data/db/db_EstFija10"]
 
 con=sql.connect(bds[0]) 
 cur=con.cursor()
@@ -40,7 +43,7 @@ cur.fetchall()
 
 ##################Cargar coordenadas
 
-coord=pd.read_csv('data/processed/Coordenadas.csv')
+coord=pd.read_csv(BASE / 'data/processed/Coordenadas.csv')
 coord.to_sql('coordenadas', con, if_exists="replace")
 ####### información de nods y arcos es igual para todos los escenarios
 
@@ -100,8 +103,8 @@ info_arc=pd.read_sql(""" with t1 as(
                         """, con).sort_values(by='prob_fallo')
 
 
-info_arc.to_csv('data/processed/info_arc.csv')
-info_nodes.to_csv('data/processed/info_nodes.csv')
+info_arc.to_csv(BASE / 'data/processed/info_arc.csv')
+info_nodes.to_csv(BASE / 'data/processed/info_nodes.csv')
 
 info_arc.isna().sum()
 

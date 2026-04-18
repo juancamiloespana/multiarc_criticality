@@ -1,6 +1,9 @@
+from pathlib import Path
 import numpy as np
 import pandas as pd
 import sqlite3 as sql
+
+BASE = Path(__file__).parent
 
 from sklearn import metrics
 import matplotlib.pyplot as plt ### gráficos
@@ -224,8 +227,8 @@ def analizar_comb(X, y):
 
 
 def main():
-    dbs_path='data/db'
-    results_path='resultados/subsets_escenarios1'
+    dbs_path = BASE / 'data/db'
+    results_path = BASE / 'output/subsets_escenarios1'
 
     dbs=listdir(dbs_path)
 
@@ -233,14 +236,14 @@ def main():
     ### conectarse a bd
     for db in tqdm(dbs):
         esc=db[3:] ### extraer nombre del escenario 
-        if os.path.exists(results_path + '/' + 'subsets_' + esc+ '.xlsx'):
+        if (results_path / ('subsets_' + esc + '.xlsx')).exists():
             print(f"Escenario {esc} was already processed and output file exist in {results_path}")
             continue
-        
+
 
         print(f"Processing scenario: {esc}")
 
-        bd=dbs_path + '/' + db
+        bd = dbs_path / db
     
 
         con=sql.connect(bd) 
@@ -262,7 +265,7 @@ def main():
 
         try:
             comp_estFijo=analizar_comb(X,y)
-            output_file = results_path + '/' + 'subsets_' + esc + '.xlsx'
+            output_file = results_path / ('subsets_' + esc + '.xlsx')
             comp_estFijo.to_excel( output_file, index=False)
         except Exception as e:
             print(f"Error processing scenario {esc}: {e}")

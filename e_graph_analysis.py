@@ -1,11 +1,14 @@
+from pathlib import Path
 import sqlite3 as sql
 import pandas as pd
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 
+BASE = Path(__file__).parent
 
-con=sql.connect("data/db/db_EstFija10")
+
+con=sql.connect(BASE / "data/db/db_EstFija10")
 cur=con.cursor()
 
 cur.execute("select name from sqlite_master where type='table'")
@@ -120,8 +123,8 @@ df_all_edges = pd.concat(
 
 import openpyxl
 
-edge_metrics_df.to_excel('resultados/graph_metrics_graph.xlsx')
-df_all_edges.to_excel('resultados/graphs_metrics_echelon.xlsx')
+edge_metrics_df.to_excel(BASE / 'output/graph_metrics_graph.xlsx')
+df_all_edges.to_excel(BASE / 'output/graphs_metrics_echelon.xlsx')
 
 
 
@@ -183,7 +186,7 @@ min_cut_cd_customer['Subset'] = 'CD-Customer'
 df_all_min_cuts = pd.concat([min_cut_supplier_plant, min_cut_plant_cd, min_cut_cd_customer], ignore_index=True)
 
 
-df_all_min_cuts.to_excel("resultados\\all_cutsets.xlsx")
+df_all_min_cuts.to_excel(BASE / "output/all_cutsets.xlsx")
 
 info_nodes['Plant'].sum()
 4*25
@@ -246,4 +249,4 @@ df_cunt_s_cd_customer['Subset'] = 'CD-Customer'
 # Concatenate the DataFrames
 df_all_edges = pd.concat([df_cunt_s_plant, df_cunt_s_plant_cd, df_cunt_s_cd_customer], ignore_index=True)
 
-df_all_edges.to_excel('resultados\\min_cut_count.xlsx')
+df_all_edges.to_excel(BASE / 'output/min_cut_count.xlsx')
